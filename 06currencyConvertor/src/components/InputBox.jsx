@@ -15,13 +15,11 @@ function InputBox({
    const amountInputId = useId()
 
     return (
-        //In the Inp_box component, there's a reference to an undefined variable amountInputId in the <label> element:
+        //In the Inp_box component, there's a reference to an undefined variable amountInputId in the <label> element
+        
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className="w-1/2">
-                
-                <label htmlFor={amountInputId}  className="text-black/40 mb-2 inline-block"> 
-                    {label}
-                </label>
+                    <label htmlFor={id} className="text-black/40 mb-2 inline-block">{label}</label>
                 <input
                     id={amountInputId}
                     className="outline-none w-full bg-transparent py-1.5"
