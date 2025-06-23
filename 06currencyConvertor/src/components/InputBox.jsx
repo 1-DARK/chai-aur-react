@@ -11,12 +11,15 @@ function InputBox({
     currencyDisable = false,
     className = "",
 }) {
+    
    const amountInputId = useId()
 
     return (
+        //In the Inp_box component, there's a reference to an undefined variable amountInputId in the <label> element:
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className="w-1/2">
-                <label htmlFor={amountInputId}  className="text-black/40 mb-2 inline-block">
+                
+                <label htmlFor={amountInputId}  className="text-black/40 mb-2 inline-block"> 
                     {label}
                 </label>
                 <input
